@@ -14,6 +14,7 @@
 		AC6674762890D08400DD1490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6674752890D08400DD1490 /* Assets.xcassets */; };
 		AC6674792890D08400DD1490 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6674772890D08400DD1490 /* LaunchScreen.storyboard */; };
 		AC6674832890D19900DD1490 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6674822890D19900DD1490 /* CloudKit.framework */; };
+		AC6674882890D2F500DD1490 /* Grat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6674872890D2F500DD1490 /* Grat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		AC66747A2890D08400DD1490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC6674802890D19500DD1490 /* Gratz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gratz.entitlements; sourceTree = "<group>"; };
 		AC6674822890D19900DD1490 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		AC6674872890D2F500DD1490 /* Grat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		AC6674842890D1CA00DD1490 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AC6674872890D2F500DD1490 /* Grat.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				AC6674712890D08300DD1490 /* ViewController.swift in Sources */,
 				AC66746D2890D08300DD1490 /* AppDelegate.swift in Sources */,
 				AC66746F2890D08300DD1490 /* SceneDelegate.swift in Sources */,
+				AC6674882890D2F500DD1490 /* Grat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
