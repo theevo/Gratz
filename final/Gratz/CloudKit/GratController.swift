@@ -22,25 +22,24 @@ class GratController {
         
         let grat = Grat(gratitude: gratitude, date: date)
         
-        let exerciseRecord = CKRecord(grat: grat)
+        let gratRecord = CKRecord(grat: grat)
         
         //lets save n
-        publicDB.save(exerciseRecord) { record, error in
+        publicDB.save(gratRecord) { record, error in
             if let error = error {
                 print("Error in \(#function) : \(error.localizedDescription) \n---\n \(error)\n---\n ")
-                completion(false)
-                return
+                return completion(false)
             }
             
             //make sure the records are valid
-            guard let record = record, let saveRecord = Grat(ckRecord: record) else {
-                print("Error in \(#function) : \n---\n \(String(describing: error))")
-                completion(false)
+            guard let record = record,
+                  let savedRecord = Grat(ckRecord: record) else {
+                print("Error in \(#function): could not unwrap")
                 return completion(false)
             }
             
             //append to our array if successful
-            self.gratz.append(saveRecord)
+            self.gratz.append(savedRecord)
             completion(true)
         }
     }
