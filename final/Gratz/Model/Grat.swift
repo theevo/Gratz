@@ -23,3 +23,27 @@ class Grat {
         self.recordID = recordID
     }
 }
+
+extension Grat {
+    convenience init?(ckRecord: CKRecord) {
+        guard let gratitude = ckRecord[Constants.gratitudeKey] as? String,
+              let date = ckRecord[Constants.dateKey] as? Date
+        else { return nil }
+        
+        self.init(gratitude: gratitude, date: date)
+    }
+}
+
+extension CKRecord {
+    convenience init(grat: Grat) {
+        self.init(recordType: Constants.gratitudeKey, recordID: grat.recordID)
+        self.setValue(grat.gratitude, forKey: Constants.gratsKey)
+        self.setValue(grat.date, forKey: Constants.dateKey)
+    }
+}
+
+extension Grat: Equatable {
+    static func == (lhs: Grat, rhs: Grat) -> Bool {
+        lhs.recordID == rhs.recordID
+    }
+}
