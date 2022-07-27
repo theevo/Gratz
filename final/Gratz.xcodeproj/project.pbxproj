@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AC66746D2890D08300DD1490 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC66746C2890D08300DD1490 /* AppDelegate.swift */; };
 		AC66746F2890D08300DD1490 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC66746E2890D08300DD1490 /* SceneDelegate.swift */; };
-		AC6674712890D08300DD1490 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6674702890D08300DD1490 /* ViewController.swift */; };
 		AC6674742890D08300DD1490 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6674722890D08300DD1490 /* Main.storyboard */; };
 		AC6674762890D08400DD1490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6674752890D08400DD1490 /* Assets.xcassets */; };
 		AC6674792890D08400DD1490 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6674772890D08400DD1490 /* LaunchScreen.storyboard */; };
@@ -18,13 +17,13 @@
 		AC66748A2890D38F00DD1490 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6674892890D38E00DD1490 /* Constants.swift */; };
 		AC66748C2890D5FF00DD1490 /* GratController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC66748B2890D5FF00DD1490 /* GratController.swift */; };
 		AC66748F2890D9C700DD1490 /* GratError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC66748E2890D9C700DD1490 /* GratError.swift */; };
+		AC6674922890DC6000DD1490 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6674912890DC6000DD1490 /* DetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC6674692890D08300DD1490 /* Gratz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gratz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC66746C2890D08300DD1490 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC66746E2890D08300DD1490 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC6674702890D08300DD1490 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC6674732890D08300DD1490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC6674752890D08400DD1490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC6674782890D08400DD1490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +34,7 @@
 		AC6674892890D38E00DD1490 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AC66748B2890D5FF00DD1490 /* GratController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratController.swift; sourceTree = "<group>"; };
 		AC66748E2890D9C700DD1490 /* GratError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratError.swift; sourceTree = "<group>"; };
+		AC6674912890DC6000DD1490 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +69,12 @@
 		AC66746B2890D08300DD1490 /* Gratz */ = {
 			isa = PBXGroup;
 			children = (
+				AC6674802890D19500DD1490 /* Gratz.entitlements */,
 				AC66748D2890D93300DD1490 /* CloudKit */,
 				AC6674842890D1CA00DD1490 /* Model */,
-				AC6674802890D19500DD1490 /* Gratz.entitlements */,
+				AC6674902890DC2500DD1490 /* DetailView */,
 				AC66746C2890D08300DD1490 /* AppDelegate.swift */,
 				AC66746E2890D08300DD1490 /* SceneDelegate.swift */,
-				AC6674702890D08300DD1490 /* ViewController.swift */,
 				AC6674722890D08300DD1490 /* Main.storyboard */,
 				AC6674752890D08400DD1490 /* Assets.xcassets */,
 				AC6674772890D08400DD1490 /* LaunchScreen.storyboard */,
@@ -107,6 +107,14 @@
 				AC66748B2890D5FF00DD1490 /* GratController.swift */,
 			);
 			path = CloudKit;
+			sourceTree = "<group>";
+		};
+		AC6674902890DC2500DD1490 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				AC6674912890DC6000DD1490 /* DetailTableViewController.swift */,
+			);
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +188,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC6674922890DC6000DD1490 /* DetailTableViewController.swift in Sources */,
 				AC66748A2890D38F00DD1490 /* Constants.swift in Sources */,
-				AC6674712890D08300DD1490 /* ViewController.swift in Sources */,
 				AC66748F2890D9C700DD1490 /* GratError.swift in Sources */,
 				AC66746D2890D08300DD1490 /* AppDelegate.swift in Sources */,
 				AC66746F2890D08300DD1490 /* SceneDelegate.swift in Sources */,
