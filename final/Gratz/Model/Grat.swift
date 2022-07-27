@@ -37,7 +37,7 @@ extension Grat {
 extension CKRecord {
     convenience init(grat: Grat) {
         self.init(recordType: Constants.gratitudeKey, recordID: grat.recordID)
-        self.setValue(grat.gratitude, forKey: Constants.gratsKey)
+        self.setValue(grat.gratitude, forKey: Constants.gratzKey)
         self.setValue(grat.date, forKey: Constants.dateKey)
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 struct Constants {
-    static let gratsKey = "Gratz"
+    static let gratzKey = "Gratz"
     static let gratitudeKey = "gratitude"
     static let dateKey = "date"
 }
